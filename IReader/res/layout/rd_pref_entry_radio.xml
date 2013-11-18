@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal"
+    style="@style/fillx">
+    <TextView
+        android:gravity="center_vertical"
+        style="@style/wrap"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dip"
+        android:paddingBottom="20dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txt"
+        android:textColor="@color/rd_white"
+        android:minHeight="50dp" />
+
+    <CheckedTextView android:id="@+id/checkedtext"
+        style="@style/wrap"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:checkMark="@drawable/rd_pref_ratio"
+        android:minHeight="50dp" />
+</LinearLayout>

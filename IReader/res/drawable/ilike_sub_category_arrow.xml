@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/ilike_sub_category_arrow_pressed" />
+    <item android:drawable="@drawable/ilike_sub_category_arrow_normal" />
+</selector>

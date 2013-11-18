@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/fillall"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/login"
+        style="@style/wrap"
+        android:text="登录" />
+    <Button
+        android:id="@+id/dailyTop"
+        style="@style/wrap"
+        android:text="体验！" />
+
+</LinearLayout>

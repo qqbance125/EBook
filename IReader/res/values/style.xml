@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ILikeImageChannelTheme" parent="@android:Theme.Black">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:colorBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="fillx">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="filly">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="fillall">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="rd_article_title">
+        <item name="android:textSize">@dimen/rd_rss_list_font_title_size</item>
+        <item name="android:textColor">@color/rd_article_title</item>
+        <item name="android:paddingRight">5dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="rd_article_detail_title">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="rd_article_pub_date">
+        <item name="android:textColor">@color/rd_article_pub_date</item>
+        <item name="android:textSize">@dimen/rd_rss_list_font_introduce_size</item>
+    </style>
+
+    <style name="rd_article_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textColor">@color/rd_article_content</item>
+        <item name="android:textSize">@dimen/rd_article_time_text_size</item>
+    </style>
+
+    <!-- These are base styles used as parent for other styles. -->
+    <!-- YOU SHOULD NOT USE THIS DIRECTLY. -->
+
+    <style name="rd_common_c_btn_0" parent="wrap">
+        <item name="android:background">@drawable/rd_common_c_btn_0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/rd_black</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:minHeight">45dp</item>
+    </style>
+
+    <!-- Have to set dialog to use this theme, to get rid of the header. -->
+    <!-- You should not use this directly. -->
+
+    <style name="dialog_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/rd_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- Used in dialogs -->
+    <style name="btn_dialog" parent="rd_common_c_btn_0" />
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/rd_transparent</item>
+        <item name="android:windowBackground">@color/rd_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

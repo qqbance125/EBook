@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillx"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/rd_menu_back"
+        style="@style/wrap"
+        android:layout_weight="1"
+        android:src="@drawable/rd_rss_back_btn_drawable" />
+
+    <ImageView
+        android:id="@+id/rd_menu_reflesh"
+        style="@style/wrap"
+        android:layout_weight="1"
+        android:src="@drawable/rd_rss_reflesh_btn_drawable" />
+
+    <ImageView
+        android:id="@+id/rd_menu_share_btn"
+        style="@style/wrap"
+        android:layout_weight="1"
+        android:src="@drawable/rd_rss_share_btn_drawable" />
+
+    <ImageView
+        android:id="@+id/menu_full_screen"
+        style="@style/wrap"
+        android:layout_weight="1"
+        android:src="@drawable/rd_bottom_menu_fullscreen_enter_button" />
+
+</merge>

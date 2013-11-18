@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/fillall"
+    android:orientation="vertical" >
+
+
+    <GridView
+        android:id="@+id/gridview"
+        style="@style/fillx"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:fadingEdge="none"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:horizontalSpacing="30dip"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="15dip" >
+    </GridView>
+
+    <!--
+         <com.qihoo360.reader.ui.ReaderMenuContainer
+        android:id="@+id/menu_layout"
+        style="@style/fillall"
+        android:layout_alignParentBottom="true" />
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/menu_my_favour"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rd_reader_menu_item"
+            android:clickable="false"
+            android:drawablePadding="3dip"
+            android:drawableTop="@drawable/rd_menu_item_fav_collection_icon_drawable"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dip"
+            android:text="@string/rd_article_my_collection"
+            android:textColor="@color/rd_menu_text_color" />
+
+        <TextView
+            android:id="@+id/menu_add_bookmark"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rd_reader_menu_item"
+            android:clickable="false"
+            android:drawablePadding="3dip"
+            android:drawableTop="@drawable/rd_menu_item_add_fav_icon_drawable"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dip"
+            android:text="@string/rd_add_fav"
+            android:textColor="@color/rd_menu_text_color" />
+
+        <TextView
+            android:id="@+id/menu_offline"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rd_reader_menu_item"
+            android:clickable="false"
+            android:drawablePadding="3dip"
+            android:drawableTop="@drawable/rd_menu_item_our_offline_icon"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dip"
+            android:text="@string/rd_offline_title"
+            android:textColor="@color/rd_menu_text_color" />
+
+        <TextView
+            android:id="@+id/menu_night_mode"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rd_reader_menu_item"
+            android:clickable="false"
+            android:drawablePadding="3dip"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dip"
+            android:textColor="@color/rd_menu_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <!--
+             <TextView
+            android:id="@+id/menu_feedback"
+            style="@style/fillall"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/rd_reader_menu_item"
+            android:clickable="false"
+            android:drawablePadding="3dip"
+            android:drawableTop="@drawable/rd_feedback_icon"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dip"
+            android:text="@string/rd_feedback"
+            android:textColor="@color/rd_menu_text_color" />
+        -->
+
+        <TextView
+            android:id="@+id/menu_photo_gone"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rd_reader_menu_item"
+            android:clickable="false"
+            android:drawablePadding="3dip"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dip"
+            android:textColor="@color/rd_menu_text_color" />
+
+        <TextView
+            android:id="@+id/menu_text_size"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rd_reader_menu_item"
+            android:clickable="false"
+            android:drawablePadding="3dip"
+            android:drawableTop="@drawable/rd_menu_item_font_icon_drawable"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dip"
+            android:text="@string/rd_font_size"
+            android:textColor="@color/rd_menu_text_color" />
+
+        <TextView
+            android:id="@+id/menu_clear"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rd_reader_menu_item"
+            android:clickable="false"
+            android:drawablePadding="3dip"
+            android:drawableTop="@drawable/rd_menu_item_our_clearcache_icon"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dip"
+            android:text="@string/rd_clear_cache"
+            android:textColor="@color/rd_menu_text_color" />
+
+        <TextView
+            android:id="@+id/menu_settings"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rd_reader_menu_item"
+            android:clickable="false"
+            android:drawablePadding="3dip"
+            android:drawableTop="@drawable/rd_menu_item_our_settings_icon"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dip"
+            android:text="@string/rd_reader_preference"
+            android:textColor="@color/rd_menu_text_color" />
+    </LinearLayout>
+
+</merge>

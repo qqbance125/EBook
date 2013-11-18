@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rd_article_common_title_bar_bg"
+    android:orientation="horizontal"
+    android:baselineAligned="false" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="6dip"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/rd_list_item_article_title"
+            style="@style/rd_article_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5sp"
+            android:lines="2"/>
+
+        <LinearLayout style="@style/fillx"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/rd_list_item_article_content"
+                style="@style/rd_article_content"
+                android:gravity="center_vertical"
+                android:ellipsize="end"
+                android:text="2012-4-6" />
+            
+            <ImageView
+                android:id="@+id/rd_list_item_article_offline_tag"
+                android:layout_marginLeft="2dip"
+             	android:paddingTop="1sp"
+                android:layout_width="14sp"
+                android:layout_height="15sp"
+                android:src="@drawable/rd_article_offline_target" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rd_list_item_snap_container"
+        android:layout_width="@dimen/rd_article_list_image_width"
+        android:layout_height="@dimen/rd_article_list_image_height"
+        android:background="@drawable/rd_article_list_default_img"
+        android:paddingBottom="6dip"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:paddingTop="2dip"
+        android:visibility="visible"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="6dip" >
+
+        <com.qihoo360.reader.ui.view.CustomImageView
+            android:id="@+id/rd_list_item_snapshot"
+            style="@style/fillall"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+</LinearLayout>

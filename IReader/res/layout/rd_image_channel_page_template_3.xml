@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rd_image_container"
+    style="@style/fillall"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingBottom="5dip"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="5dip"
+        android:layout_weight="0.64"
+        android:orientation="horizontal" >
+
+        <com.qihoo360.reader.ui.view.ImageAlbumCoverView
+            android:id="@+id/rd_image_view_1"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dip"
+            android:layout_weight="2"
+            android:scaleType="center"
+            android:src="@drawable/rd_article_detail_loading" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.qihoo360.reader.ui.view.ImageAlbumCoverView
+                android:id="@+id/rd_image_view_2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_marginBottom="5dip"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/rd_article_detail_loading" />
+
+            <com.qihoo360.reader.ui.view.ImageAlbumCoverView
+                android:id="@+id/rd_image_view_3"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/rd_article_detail_loading" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.36"
+        android:orientation="horizontal" >
+
+        <com.qihoo360.reader.ui.view.ImageAlbumCoverView
+            android:id="@+id/rd_image_view_4"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/rd_article_detail_loading" />
+
+        <com.qihoo360.reader.ui.view.ImageAlbumCoverView
+            android:id="@+id/rd_image_view_5"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/rd_article_detail_loading" />
+
+        <com.qihoo360.reader.ui.view.ImageAlbumCoverView
+            android:id="@+id/rd_image_view_6"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/rd_article_detail_loading" />
+    </LinearLayout>
+
+</LinearLayout>

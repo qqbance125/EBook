@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.qihoo360.reader.ui.view.ImageViewEx
+        android:id="@+id/image_viewer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="matrix" />
+
+    <LinearLayout
+        style="@style/fillx"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rd_bg_menu_level_1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/menu_back"
+            style="@style/wrap"
+            android:layout_weight="1"
+            android:src="@drawable/rd_rss_back_btn_drawable" />
+
+        <ImageView
+            android:id="@+id/menu_share_btn"
+            style="@style/wrap"
+            android:layout_weight="1"
+            android:src="@drawable/rd_rss_share_btn_drawable" />
+
+        <ImageView
+            android:id="@+id/menu_download_btn"
+            style="@style/wrap"
+            android:layout_weight="1"
+            android:src="@drawable/rd_rss_download_btn_drawable" />
+    </LinearLayout>
+
+</FrameLayout>

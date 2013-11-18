@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillall" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        style="@style/fillall"
+        android:background="@drawable/rd_left_pane_body_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rd_left_pane_open_item_normal"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/wrap"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dip"
+                android:drawableLeft="@null"
+                android:drawablePadding="10dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/rd_offline_settings"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/select_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rd_select_all" />
+
+            <Button
+                android:id="@+id/deselect_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="@string/rd_deselect_all" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            style="@style/fillall"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/rd_left_pane_body_bg"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/rd_left_pane_line"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/wrapper_root"
+        style="@style/fillall"
+        android:background="@color/rd_half_transparent"
+        android:visibility="gone" />
+
+</FrameLayout>

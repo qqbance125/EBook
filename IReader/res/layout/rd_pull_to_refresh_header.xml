@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    style="@style/fillall"
+    android:gravity="center"
+    android:paddingBottom="15dip"
+    android:paddingTop="5dip"
+    android:background="@drawable/ilike_refresh_view_bg" >
+
+    <ProgressBar
+        android:id="@+id/pull_to_refresh_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/rd_article_process_bar_bg"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/pull_to_refresh_image"
+        style="@style/wrap"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="20dip"
+        android:contentDescription="@drawable/rd_ic_pulltorefresh_arrow"
+        android:gravity="center"
+        android:src="@drawable/rd_ic_pulltorefresh_arrow"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pull_to_refresh_text"
+        style="@style/fillx"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="5dip"
+        android:text="@string/rd_pull_to_refresh_pull_label"
+        android:textSize="12dip"
+        android:textColor="@color/rd_dark_gray" />
+
+    <TextView
+        android:id="@+id/pull_to_refresh_updated_at"
+        style="@style/fillx"
+        android:layout_below="@+id/pull_to_refresh_text"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="12dip"
+        android:textColor="@color/rd_dark_gray"
+        android:visibility="gone" />
+
+</RelativeLayout>

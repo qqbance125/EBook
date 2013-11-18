@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillx" >
+
+    <FrameLayout
+        android:id="@+id/top"
+        style="@style/wrap"
+        android:layout_width="87dip"
+        android:layout_height="87dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip" >
+
+        <ImageView
+            android:id="@+id/home_button"
+            style="@style/wrap"
+            android:layout_width="83dip"
+            android:layout_height="82dip"
+            android:layout_gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingTop="3dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rd_article_list_default_img" />
+
+        <ImageView
+            android:id="@+id/rss_home_delete_btn"
+            style="@style/wrap"
+            android:layout_gravity="top|left"
+            android:src="@drawable/rd_subscribe_select"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/rss_home_textview"
+        style="@style/wrap"
+        android:layout_below="@id/top"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:textColor="@color/rd_black" >
+    </TextView>
+
+</RelativeLayout>

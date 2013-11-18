@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rd_article_time_text_size">12sp</dimen>
+    <dimen name="rd_artical_content_text_default_size">14sp</dimen>
+    <dimen name="rd_main_delete_padding">5dip</dimen>
+
+    <dimen name="rd_article_list_image_width">60dip</dimen>
+    <dimen name="rd_article_list_image_height">60dip</dimen>
+
+    <dimen name="rd_main_padding_bottom">40dip</dimen>
+    <dimen name="rd_article_detaile_footer_padding">20dip</dimen>
+
+    <dimen name="rd_gridview_snap_padding">2dip</dimen>
+</resources>

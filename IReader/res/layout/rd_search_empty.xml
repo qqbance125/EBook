@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillall" >
+
+    <TextView
+        style="@style/fillx"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/rd_no_data_tips"
+        android:textColor="@color/rd_black"
+        android:textSize="19sp" />
+
+</FrameLayout>

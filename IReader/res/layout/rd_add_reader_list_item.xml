@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillx"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="5dip"
+        android:layout_gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/home_button"
+            style="@style/fillall"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            style="@style/fillx"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="12dip"
+            android:src="@drawable/rd_channel_cover_decor_line" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/rss_home_textview"
+        style="@style/wrap"
+        android:layout_width="0dip"
+        android:layout_gravity="left|center_vertical"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/rd_white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/mark_subscribed"
+        style="@style/wrap"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="1dip"
+        android:padding="3dip"
+        android:src="@drawable/rd_subscribe_select" />
+
+</LinearLayout>

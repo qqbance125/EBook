@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rd_article_detail"
+    style="@style/fillx"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="false"
+    android:lineSpacingExtra="3sp"
+    android:layout_gravity="left"
+    android:autoLink="none"
+    android:textColor="@color/rd_article_content_text"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip">
+
+</TextView>

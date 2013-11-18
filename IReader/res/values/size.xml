@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- rd_rss_dimen -->
+    <dimen name="rd_rss_detail_title">15dip</dimen>
+    <dimen name="rd_rss_detail_content_font_from_and_pubtime_size">5dip</dimen>
+    <dimen name="rd_rss_detail_content_font_initial_size">10dip</dimen>
+    <dimen name="rd_rss_list_font_title_size">18sp</dimen>
+    <dimen name="rd_rss_list_font_introduce_size">13sp</dimen>
+    <dimen name="rd_rss_list_font_from_and_pubtime_size">10dip</dimen>
+    <dimen name="rd_rss_list_image_height">50dip</dimen>
+    <dimen name="rd_article_list_header_view_height">150dip</dimen>
+    <dimen name="rd_article_list_item_content">15sp</dimen>
+    <dimen name="rd_article_detail_bottom_padding">46dip</dimen>
+
+</resources>

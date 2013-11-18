@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Header layout used in custom dialogs, and custom context dialogs. -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    style="@style/fillx"
+    android:drawablePadding="10dip"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:padding="10dip"
+    android:paddingLeft="4dip"
+    android:singleLine="true"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@color/rd_white" />

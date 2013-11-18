@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project Licensed under the
+    Apache License, Version 2.0 (the "License"); you may not use this file except
+    in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software distributed
+    under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+    OR CONDITIONS OF ANY KIND, either express or implied. See the License for
+    the specific language governing permissions and limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="enable_update_in_wifi"
+        android:layout="@layout/rd_custom_preference_layout"
+        android:title="@string/rd_pref_auto_update_wifi"
+        android:widgetLayout="@layout/rd_pref_checkbox" />
+
+    <!--
+         <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="enable_offline_downoad"
+        android:layout="@layout/rd_custom_preference_layout"
+        android:title="@string/rd_setting_enable_offline"
+        android:widgetLayout="@layout/rd_pref_checkbox" />
+    -->
+
+    <com.qihoo360.reader.ui.ReaderListPreference
+        android:defaultValue="after"
+        android:dialogTitle="@string/rd_new_add_channel_position"
+        android:entries="@array/rd_pref_new_channel_position"
+        android:entryValues="@array/rd_pref_new_channel_position_values"
+        android:key="new_add_channel_position"
+        android:layout="@layout/rd_custom_preference_layout"
+        android:title="@string/rd_new_add_channel_position"
+        android:widgetLayout="@layout/rd_pref_other" />
+
+    <!-- <com.qihoo360.reader.ui.ReaderYesOrNoPreference
+        android:dialogMessage="@string/rd_should_clear_all_tips"
+        android:dialogTitle="@string/rd_clear_all_tips"
+        android:layout="@layout/rd_custom_preference_layout"
+        android:title="@string/rd_clear_all_tips"
+        android:widgetLayout="@layout/rd_pref_other" /> -->
+
+    <!--
+         <PreferenceScreen
+        android:key="offline_down_setting"
+        android:layout="@layout/rd_custom_preference_layout"
+        android:title="离线下载设置" />
+    -->
+
+</PreferenceScreen>

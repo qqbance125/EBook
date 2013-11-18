@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qihoo360.reader"
+    android:versionCode="45"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".ReaderApplication"
+        android:icon="@drawable/rd_ic_launcher"
+        android:label="@string/rd_app_name" >
+        <activity
+            android:name="com.qihoo360.reader.ReaderMainPageActivity"
+            android:label="@string/rd_app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qihoo360.reader.ui.channels.AddReaderActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.qihoo360.reader.ui.channels.ArticleCollectionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.qihoo360.reader.ui.articles.ArticleReadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.qihoo360.reader.ui.articles.ArticleDetailActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.qihoo.ilike.ui.ILikeArticleDetailActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name=".ui.imagechannel.ImageChannelActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/ILikeImageChannelTheme" />
+        <activity
+            android:name="com.qihoo.ilike.ui.ILikeImageChannelActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/ILikeImageChannelTheme" />
+        <activity
+            android:name=".ui.GallaryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".ui.AlbumGallaryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".settings.ReaderPreferencePage"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.offline.OfflineSettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".ui.channels.SubscribedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.qihoo360.reader.ui.channels.RandomReadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.qihoo.ilike.ui.ILikeIntroActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.qihoo360.reader.ui.SelectTextActivity" />
+        <activity android:name="com.qihoo360.reader.ui.channels.TestActivity" />
+        <activity android:name="com.qihoo360.reader.GoastActivity" />
+        <activity
+            android:name=".ui.offline.OfflineActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <provider
+            android:name=".data.Provider"
+            android:authorities="com.qihoo.browser.provider.reader" />
+        <provider
+            android:name="com.qihoo.ilike.data.Provider"
+            android:authorities="com.qihoo.browser.provider.ilike" />
+
+        <service android:name=".offline.OfflineService" />
+    </application>
+
+</manifest>

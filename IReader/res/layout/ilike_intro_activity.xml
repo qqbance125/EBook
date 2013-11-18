@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ilike_intro_container"
+    style="@style/fillall" >
+
+    <RelativeLayout
+        style="@style/fillall"
+        android:background="@color/rd_half_transparent" >
+
+        <FrameLayout
+            android:id="@+id/ilike_intro_top_bar"
+            style="@style/fillx"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ilike_top_bar_bg"
+            android:paddingBottom="3dip"
+            android:paddingLeft="6dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:id="@+id/rd_title_bottom_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ilike_top_bar_content" />
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/fillx"
+            android:layout_centerVertical="true"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/fillx"
+                android:padding="20dip"
+                android:gravity="center"
+                android:text="@string/i_like_intro_tip_1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                style="@style/fillx"
+                android:src="@drawable/ilike_intro_tip_image" />
+
+            <TextView
+                style="@style/fillx"
+                android:padding="20dip"
+                android:gravity="center"
+                android:text="@string/i_like_intro_tip_2"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/fillx"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <Button
+                android:id="@+id/ilike_intro_btn_return"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ilike_intro_btn_bg"
+                android:padding="10dip"
+                android:text="@string/i_like_intro_btn_return"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/ilike_intro_btn_enter"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/ilike_intro_btn_bg"
+                android:padding="10dip"
+                android:text="@string/i_like_intro_btn_enter"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

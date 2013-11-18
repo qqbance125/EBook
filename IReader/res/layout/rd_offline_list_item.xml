@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:id="@+id/channel_icon_container"
+        android:layout_width="wrap_content"
+        android:layout_height="64dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" >
+
+        <ImageView
+            android:id="@+id/channel_icon"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:layout_gravity="center"
+            android:background="@drawable/rd_offline_channel_bg"
+            android:contentDescription="@string/rd_app_name"
+            android:src="@drawable/rd_article_list_default_img" />
+
+        <ImageView
+            android:layout_width="22dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="21dip"
+            android:src="@drawable/rd_channel_cover_decor_line" />
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/select_to_offline"
+        style="@style/wrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:button="@drawable/rd_offline_checkbox"
+        android:focusable="false" />
+
+    <RelativeLayout
+        style="@style/fillall"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_toLeftOf="@id/select_to_offline"
+        android:layout_toRightOf="@id/channel_icon_container" >
+
+        <TextView
+            android:id="@+id/channel_title"
+            style="@style/wrap"
+            android:layout_alignParentLeft="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/rd_white" />
+
+        <TextView
+            android:id="@+id/offline_status_text"
+            style="@style/wrap"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/rd_white"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            style="@style/fillx"
+            android:layout_below="@id/channel_title"
+            android:layout_marginTop="2dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/offline_time"
+                style="@style/wrap"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/rd_white"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/offline_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="14dip"
+                android:max="100"
+                android:paddingTop="8dip"
+                android:progressDrawable="@drawable/rd_progress_bar"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

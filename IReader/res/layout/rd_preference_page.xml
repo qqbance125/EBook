@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    style="@style/fillall"
+    android:background="@drawable/rd_settings_main_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/fillx"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/rd_banner_bg"
+        android:drawablePadding="10dip"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dip"
+        android:singleLine="true"
+        android:text="@string/rd_reader_preference"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF" />
+
+    <ScrollView
+        style="@style/fillall"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/fillall"
+            android:orientation="vertical" >
+
+            <com.qihoo360.reader.settings.ReaderCheckBoxPreference
+                android:id="@+id/pref_update_only_wifi"
+                style="@style/fillx"
+                android:background="@drawable/rd_settings_bg" />
+
+            <com.qihoo360.reader.settings.ReaderListPreference
+                android:id="@+id/pref_new_channel_position"
+                style="@style/fillx"
+                android:background="@drawable/rd_settings_bg" />
+
+            <!-- <com.qihoo360.reader.settings.ReaderCheckBoxPreference
+                android:id="@+id/pref_offline_download_text"
+                style="@style/fillx"
+                android:background="@drawable/rd_settings_bg" /> -->
+
+            <!--
+                 <com.qihoo360.reader.settings.ReaderCheckBoxPreference
+                android:id="@+id/pref_enable_offline_downoad"
+                style="@style/fillx"
+                android:background="@drawable/rd_settings_bg" />
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

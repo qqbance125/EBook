@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillall"
+    android:background="@drawable/rd_left_pane_body_bg" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/fillx"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/rd_left_pane_open_item_normal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingTop="10dip"
+        android:singleLine="true"
+        android:text="@string/rd_reader_preference"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF" />
+
+    <ListView
+        android:id="@android:id/list"
+        style="@style/fillall"
+        android:layout_below="@id/title"
+        android:background="@drawable/rd_left_pane_body_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/rd_left_pane_line"
+        android:scrollbars="none" />
+
+</RelativeLayout>

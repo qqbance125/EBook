@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rd_article_list_header_container"
+    style="@style/fillx"
+    android:layout_marginBottom="5dip"
+    android:clickable="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rd_article_detail_title_container"
+        style="@style/fillx"
+        android:layout_marginBottom="10dip"
+        android:background="@color/rd_article_line_4"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/rd_article_title"
+            style="@style/rd_article_detail_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rd_article_title_bar_bg"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="8dip"
+            android:textColor="@color/rd_black" />
+
+        <View
+            android:id="@+id/rd_title_bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="4dip"
+            android:background="@drawable/rd_title_bottom_cover" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fillx"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="20dip" >
+
+        <com.qihoo360.reader.ui.view.CustomImageView
+            android:id="@+id/ilike_author_photo"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:src="@drawable/ilike_author_default_photo"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/ilike_author"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:drawablePadding="4dip"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ilike_album"
+            style="@style/wrap"
+            android:textColor="@color/rd_gray" />
+    </LinearLayout>
+
+</LinearLayout>

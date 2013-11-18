@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillall" >
+
+    <FrameLayout
+        android:id="@+id/wrapper"
+        style="@style/fillall"
+        android:visibility="gone" />
+
+    <LinearLayout
+        style="@style/fillx"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <com.qihoo360.reader.ui.ReaderMenu
+            android:id="@+id/reader_menu"
+            style="@style/fillx"
+            android:visibility="gone" />
+
+        <com.qihoo360.reader.ui.view.FontChoiceView
+            android:id="@+id/reader_font_choice"
+            style="@style/fillx"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/bottom_container"
+            style="@style/fillx" >
+
+            <com.qihoo360.reader.ui.ReaderBottomMenubar
+                android:id="@+id/bottom_bar"
+                style="@style/fillx" />
+
+            <FrameLayout
+                android:id="@+id/standalone_btn_container"
+                style="@style/fillx" >
+
+                <ImageView
+                    android:id="@+id/standalone_btn_back"
+                    style="@style/wrap"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="@drawable/rd_bg_menu_fullscreen"
+                    android:padding="5dip"
+                    android:src="@drawable/rd_rss_back_btn_drawable" />
+
+                <ImageView
+                    android:id="@+id/menu_controller"
+                    style="@style/wrap"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/rd_bg_menu_fullscreen"
+                    android:padding="5dip"
+                    android:src="@drawable/rd_bottom_menu_fullscreen_exit_button" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</merge>

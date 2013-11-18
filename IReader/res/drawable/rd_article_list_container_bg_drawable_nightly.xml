@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/rd_article_common_title_bar_night_bg"
+    android:tileMode="repeat" />

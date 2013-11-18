@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_reader_root"
+    style="@style/fillx" >
+
+    <TextView
+        android:id="@+id/category_name"
+        style="@style/fillx"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rd_add_reader_trans_bg"
+        android:gravity="center"
+        android:paddingLeft="8dip"
+        android:paddingRight="10dip"
+        android:textSize="18sp" />
+
+</RelativeLayout>

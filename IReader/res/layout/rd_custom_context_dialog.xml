@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    style="@style/wrap"
+    android:background="@drawable/rd_common_custom_dialog_background"
+    android:minWidth="300dip"
+    android:orientation="vertical" >
+
+    <!-- header -->
+    <include layout="@layout/rd_common_custom_dialog_header" />
+
+    <LinearLayout
+        style="@style/fillx"
+        android:background="@drawable/rd_common_between_item_line" />
+    <!-- list -->
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/fillx"
+        android:layout_margin="1dip"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/rd_common_between_item_line" />
+
+</LinearLayout>

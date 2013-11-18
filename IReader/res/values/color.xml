@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="rd_white">#FFFFFF</color>
+  <color name="rd_black">#000000</color>
+  <color name="rd_gray">#888888</color>
+  <color name="rd_dark_gray">#666666</color>
+  <color name="rd_transparent">#00000000</color>
+  <color name="rd_half_transparent">#70000000</color>
+  <color name="rd_ivory">#EEEEEE</color>
+
+  <color name="rd_bg">#F3F3F3</color>
+  <color name="rd_cover_bg">#60505050</color>
+
+  <color name="rd_article_title_bar_bg">#f8f8f8</color>
+
+  <color name="rd_channel_category_title_selected">#FF0000</color>
+
+  <color name="rd_article_pub_date">#00DB00</color>
+  <color name="rd_article_title">#000000</color>
+  <color name="rd_article_content">#7F7F7F</color>
+  <!-- <color name="rd_article_list_time">#009100</color> -->
+
+  <color name="rd_article_content_text">#000000</color>
+  <color name="rd_article_content_time">#7B7B7B</color>
+  <color name="rd_article_detail_bg">#f8f8f8</color>
+
+  <color name="rd_night_bg">#161c29</color>
+  <color name="rd_night_title">#8ca8ad</color>
+  <color name="rd_night_text">#59758a</color>
+  <color name="rd_night_mask_bg">#50000000</color>
+
+  <color name="rd_article_line_1">#20B2AA</color>
+  <color name="rd_article_line_2">#008B8B</color>
+  <color name="rd_article_line_3">#2E8B57</color>
+  <color name="rd_article_line_4">#FFA500</color>
+  <color name="rd_article_line_5">#B22222</color>
+
+  <color name="rd_article_line_6">#3b69be</color>
+  <color name="rd_article_line_7">#9a2682</color>
+
+  <color name="rd_article_line_1_night">#006400</color>
+  <color name="rd_article_line_2_night">#4682B4</color>
+  <color name="rd_article_line_3_night">#CD853F</color>
+  <color name="rd_article_line_4_night">#008000</color>
+  <color name="rd_article_line_5_night">#8B0000</color>
+
+  <color name="rd_article_line_6_night">#08259a</color>
+  <color name="rd_article_line_7_night">#560240</color>
+  <color name="rd_reader_main_text_bg">#40000000</color>
+
+  <color name="rd_offline_channel_title">#515151</color>
+
+  <color name="rd_notification_bar_title">#434343</color>
+  <color name="rd_notification_bar_content">#696969</color>
+
+  <color name="rd_reader_gallery_bar_bg">#b42a2a2a</color>
+  <color name="rd_red">#FF0000</color>
+
+  <color name="ilike_category_highlighted_text">#ffc62d</color>
+</resources>

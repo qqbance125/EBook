@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    style="@style/fillall" >
+
+    <com.qihoo360.reader.ui.view.AddReaderLeftPane
+        android:id="@+id/add_reader_leftpane"
+        style="@style/filly"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/rd_add_reader_leftpane_bg" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        style="@style/fillall"
+        android:layout_toRightOf="@id/add_reader_leftpane"
+        android:background="@drawable/rd_right_container_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/searchBar"
+            style="@style/fillx"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/search_txt"
+                style="@style/wrap"
+                android:layout_width="0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/rd_edittext_bg"
+                android:ellipsize="end"
+                android:hint="@string/search_tips"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/search_btn"
+                style="@style/wrap"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/rd_subscribe_search_button_drawable" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/content_container"
+            style="@style/fillall"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <ListView
+                android:id="@+id/content"
+                style="@style/fillall"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/rd_fast_link_line"
+                android:fadingEdge="none"
+                android:listSelector="@drawable/rd_settings_bg" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--
+         <com.qihoo360.reader.ui.ReaderMenuContainer
+        android:id="@+id/menu_layout"
+        style="@style/fillall"
+        android:layout_alignParentBottom="true" />
+    -->
+
+</RelativeLayout>

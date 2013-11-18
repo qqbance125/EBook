@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillall"
+    android:background="@android:color/black" >
+
+    <com.qihoo360.reader.ui.view.AlbumGallaryView
+        android:id="@+id/rd_album_gallary_view"
+        style="@style/fillall" />
+
+    <LinearLayout
+        android:id="@+id/rd_album_gallary_title_bar"
+        style="@style/fillx"
+        android:background="#b4000000"
+        android:orientation="horizontal"
+        android:padding="12dip"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/rd_album_gallary_title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textColor="@color/rd_white" />
+
+        <TextView
+            android:id="@+id/rd_album_gallary_page_number"
+            style="@style/wrap"
+            android:textColor="@color/rd_white" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rd_album_gallary_top_bar"
+        style="@style/fillx"
+        android:layout_gravity="top"
+        android:background="@color/rd_reader_gallery_bar_bg"
+        android:paddingBottom="2dip"
+        android:paddingTop="2dip"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/rd_btn_prev_album"
+            style="@style/wrap"
+            android:layout_gravity="left|center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="20dip"
+            android:paddingTop="5dip"
+            android:src="@drawable/rd_btn_prev_album" />
+
+        <ImageView
+            android:id="@+id/rd_btn_next_album"
+            style="@style/wrap"
+            android:layout_gravity="right|center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:src="@drawable/rd_btn_next_album" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/rd_album_gallary_bottom_bar"
+        style="@style/fillx"
+        android:layout_gravity="bottom"
+        android:background="@color/rd_reader_gallery_bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/menu_back"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/rd_rss_back_btn_drawable" />
+
+        <ImageView
+            android:id="@+id/menu_share_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/rd_rss_share_btn_drawable" />
+
+        <ImageView
+            android:id="@+id/menu_likeit_btn"
+            style="@style/wrap"
+            android:layout_weight="1"
+            android:src="@drawable/ilike_likeit_btn_normal" />
+
+        <ImageView
+            android:id="@+id/menu_download_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/rd_rss_download_btn_drawable" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillx" >
+
+    <ImageView
+        android:id="@+id/animation_view"
+        style="@style/fillx"
+        android:background="@drawable/rd_add_reader_select_bg"
+        android:contentDescription="@string/rd_animation_bg" />
+
+    <ListView
+        android:id="@+id/list1"
+        style="@style/fillx"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="@color/rd_transparent"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        style="@style/filly"
+        android:layout_gravity="right"
+        android:background="@drawable/rd_shadow" />
+
+</merge>

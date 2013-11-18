@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillall" >
+
+    <ListView
+        android:id="@+id/rd_article_detail_content"
+        style="@style/fillall"
+        android:background="#f8f8f8"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:gravity="center_horizontal"
+        android:listSelector="@android:color/transparent"
+        android:orientation="vertical"
+        android:scrollingCache="true" />
+
+    <LinearLayout
+        android:id="@+id/rd_article_detail_loading_bar"
+        style="@style/fillall"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/rd_article_detail_progressBar"
+            style="@style/wrap"
+            android:indeterminateDrawable="@drawable/rd_article_process_bar_bg" />
+
+        <LinearLayout
+            android:id="@+id/rd_article_detail_load_failure_view"
+            style="@style/wrap"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/rd_empty_tips"
+                style="@style/wrap"
+                android:layout_margin="5dip"
+                android:contentDescription="@drawable/rd_article_loading_exception"
+                android:src="@drawable/rd_article_loading_exception" />
+
+            <Button
+                android:id="@+id/rd_article_detail_load_refresh"
+                style="@style/wrap"
+                android:background="@drawable/rd_article_loading_error_refresh_drawable" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

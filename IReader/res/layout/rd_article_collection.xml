@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/rd_article_collection_list_container"
+        style="@style/fillall"
+        android:background="@drawable/rd_article_common_title_bar_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/fillx"
+            android:background="@color/rd_article_line_1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/rd_list_channel_name"
+                style="@style/fillx"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rd_article_common_title_bar_bg"
+                android:padding="10dip"
+                android:text="@string/rd_article_my_collection"
+                android:textColor="@color/rd_black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/rd_title_bottom_line"
+                android:layout_width="fill_parent"
+                android:layout_height="4dip"
+                android:background="@drawable/rd_title_bottom_cover_list" />
+        </LinearLayout>
+
+        <!--
+             <View
+            android:id="@+id/rd_article_list_title_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="#00AEAE" />
+
+        -->
+
+        <ListView
+            android:id="@+id/rd_article_collection_lister"
+            style="@style/fillall"
+            android:animationCache="true"
+            android:cacheColorHint="@null"
+            android:divider="@null"
+            android:fadingEdge="none" />
+
+        <TextView
+            android:id="@android:id/empty"
+            style="@style/fillall"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/rd_black" />
+    </LinearLayout>
+
+    <com.qihoo360.reader.ui.ReaderMenuContainer
+        android:id="@+id/menu_layout"
+        style="@style/fillall"
+        android:layout_gravity="bottom" />
+
+</merge>

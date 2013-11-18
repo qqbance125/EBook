@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rd_article_detail_root" >
+
+    <com.qihoo360.reader.ui.articles.ArticleReadView
+        android:id="@+id/rd_article_gallery"
+        style="@style/fillall"
+        android:layout_weight="1"/>
+
+
+    <com.qihoo360.reader.ui.ReaderMenuContainer
+        android:id="@+id/menu_layout"
+        style="@style/fillall"
+        android:layout_gravity="bottom" />
+
+</merge>

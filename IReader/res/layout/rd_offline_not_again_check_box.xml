@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dip"
+        android:text="@string/rd_offline_dialog_tips_for_3g"
+        android:textSize="17sp"
+        android:textColor="@color/rd_white" />
+
+    <CheckBox
+        android:id="@+id/not_again"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:checked="true"
+        android:text="@string/rd_not_again"
+        android:visibility="gone" />
+
+</LinearLayout>

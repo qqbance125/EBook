@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rd_article_list_header_container"
+    style="@style/fillx"
+    android:orientation="vertical"
+    android:paddingBottom="5dip" >
+
+    <LinearLayout
+        android:id="@+id/rd_article_detail_title_container"
+        style="@style/fillx"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="4dip"
+        android:background="@color/rd_article_line_4"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/rd_article_title"
+            style="@style/rd_article_detail_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rd_article_title_bar_bg"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="8dip"
+            android:textColor="@color/rd_black" />
+
+        <View
+            android:id="@+id/rd_title_bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="4dip"
+            android:background="@drawable/rd_title_bottom_cover" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rd_article_time"
+        style="@style/wrap"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rd_article_detail_title_container"
+        android:clickable="false"
+        android:paddingBottom="4dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="10dip"
+        android:paddingTop="2dip"
+        android:singleLine="true"
+        android:textColor="@color/rd_gray"
+        android:textSize="@dimen/rd_artical_content_text_default_size" />
+
+    <LinearLayout
+        android:id="@+id/rd_article_offline_tag"
+        style="@style/wrap"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rd_article_detail_title_container"
+        android:orientation="horizontal"
+        android:paddingBottom="4dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="2dip"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/rd_list_item_article_offline_tag"
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:layout_marginLeft="2dip"
+            android:src="@drawable/rd_article_offline_target" />
+
+        <TextView
+            style="@style/wrap"
+            android:clickable="false"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/rd_gray"
+            android:layout_marginLeft="2dip"
+            android:text="已离线下载"
+            android:textSize="@dimen/rd_artical_content_text_default_size" />
+    </LinearLayout>
+
+</RelativeLayout>

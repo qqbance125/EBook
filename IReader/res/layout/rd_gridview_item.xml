@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillall" >
+
+    <ImageView
+        android:id="@+id/home_button"
+        style="@style/fillall"
+        android:layout_gravity="left|top"
+        android:background="@drawable/rd_reader_main_cell_bg"
+        android:scaleType="fitXY" />
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:textColor="@color/rd_white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/rss_home_delete_btn"
+        style="@style/wrap"
+        android:layout_gravity="top|right"
+        android:src="@drawable/rd_rss_home_delete_btn_drawable"
+        android:visibility="gone" />
+
+</FrameLayout>

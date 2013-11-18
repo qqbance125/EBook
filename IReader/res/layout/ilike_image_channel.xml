@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rd_image_channel_frame"
+    style="@style/fillall" >
+
+    <FrameLayout
+        android:id="@+id/rd_image_channel_top_bar"
+        style="@style/fillx"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="6dip"
+        android:background="@drawable/ilike_top_bar_bg"
+        android:paddingLeft="6dip"
+        android:paddingTop="2dip"
+        android:paddingRight="15dip" >
+
+        <ImageView
+            android:id="@+id/rd_title_bottom_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ilike_top_bar_content" />
+
+        <ImageView
+            android:id="@+id/ilike_info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/ilike_info_btn_bg"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ilike_category_container"
+        style="@style/fillx"
+        android:layout_below="@id/rd_image_channel_top_bar"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:orientation="horizontal" >
+
+        <!--
+             <TextView
+            android:id="@+id/ilike_category_my_fav"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/i_like_category_my_fav"
+            android:textColor="@color/ilike_category_text_color"
+            android:textSize="15sp" />
+        -->
+
+        <TextView
+            android:id="@+id/ilike_category_my_col"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ilike_category_bg_left"
+            android:gravity="center"
+            android:paddingBottom="11dip"
+            android:paddingTop="10dip"
+            android:text="@string/i_like_category_my_col"
+            android:textColor="@color/ilike_category_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ilike_category_latest_col"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ilike_category_bg_middle"
+            android:gravity="center"
+            android:paddingBottom="11dip"
+            android:paddingTop="10dip"
+            android:text="@string/i_like_category_latest_col"
+            android:textColor="@color/ilike_category_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ilike_category_hot_col"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ilike_category_bg_middle"
+            android:gravity="center"
+            android:paddingBottom="11dip"
+            android:paddingTop="10dip"
+            android:text="@string/i_like_category_hot_col"
+            android:textColor="@color/ilike_category_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ilike_category_open_sub"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.25"
+            android:background="@drawable/ilike_category_bg_right"
+            android:drawableRight="@drawable/ilike_sub_category_arrow"
+            android:gravity="center"
+            android:paddingBottom="11dip"
+            android:paddingTop="10dip"
+            android:text="@string/i_like_category_sub"
+            android:textColor="@color/ilike_category_text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.qihoo360.reader.ui.articles.ArticleListView
+        android:id="@+id/rd_image_channel_list"
+        style="@style/fillall"
+        android:layout_below="@id/ilike_category_container"
+        android:layout_marginTop="4dip"
+        android:cacheColorHint="@color/rd_ivory"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:scrollingCache="false" />
+
+    <LinearLayout
+        android:id="@+id/rd_image_channel_empty"
+        style="@style/fillall"
+        android:layout_below="@id/ilike_category_container"
+        android:background="@color/rd_half_transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/rd_empty_tips"
+            style="@style/wrap"
+            android:layout_margin="5dip"
+            android:contentDescription="@drawable/rd_article_loading_exception"
+            android:src="@drawable/rd_article_loading_exception" />
+
+        <Button
+            android:id="@+id/rd_empty_refresh"
+            style="@style/wrap"
+            android:background="@drawable/rd_article_loading_error_refresh_drawable"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rd_tip_bar"
+        style="@style/fillx"
+        android:layout_below="@id/ilike_category_container"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="@drawable/rd_article_list_tips_view_bg"
+        android:gravity="center"
+        android:textColor="@color/rd_white"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/ilike_sub_category_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ilike_category_container"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="-6dip"
+        android:background="@drawable/ilike_sub_category_gridview_bg"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:paddingBottom="20dip"
+        android:paddingTop="20dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dip"
+        android:visibility="gone" />
+
+    <com.qihoo360.reader.ui.ReaderMenuContainer
+        android:id="@+id/menu_layout"
+        style="@style/fillall"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

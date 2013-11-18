@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillall"
+    android:background="@drawable/rd_image_channel_full_screen_tip"
+    android:clickable="true"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/rd_article_detail_tips_btn"
+        style="@style/wrap"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dip"
+        android:background="@drawable/rd_article_once_tips_btn_bg"
+        android:padding="10dip"
+        android:text="@string/rd_i_know_tips"
+        android:textColor="@color/rd_white"
+        android:textSize="18sp" />
+
+</FrameLayout>

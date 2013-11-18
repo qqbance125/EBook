@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fillall"
+    android:background="@android:color/black" >
+
+    <com.itcast.demoActivity.ImageGallaryView
+        android:id="@+id/image_gallary_view"
+        style="@style/fillall" />
+
+    <LinearLayout
+        style="@style/fillx"
+        android:id="@+id/rd_image_gallary_bottom_bar"
+        android:layout_gravity="bottom"
+        android:background="@color/rd_reader_gallery_bar_bg"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/menu_back"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/rd_rss_back_btn_drawable" />
+
+        <ImageView
+            android:id="@+id/menu_share_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/rd_rss_share_btn_drawable" />
+
+        <ImageView
+            android:id="@+id/menu_likeit_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ilike_likeit_btn_normal" />
+
+        <ImageView
+            android:id="@+id/menu_download_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/rd_rss_download_btn_drawable" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_reader"
+    style="@style/fillall"
+    android:background="#d1d1d1"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/topcontainer"
+        style="@style/fillx"
+        android:background="@null"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/topTxt"
+            style="@style/rd_article_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dip"
+            android:text="@string/rd_subscribe_title"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/subscribed_back_btn"
+            style="@style/wrap"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/rd_subscribe_ok_drawable" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/topBar"
+        style="@style/fillx"
+        android:layout_below="@id/topcontainer"
+        android:background="@drawable/rd_subscribe_title_bg" >
+
+        <LinearLayout
+            android:id="@+id/titleBar"
+            style="@style/fillx"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/next_btn"
+                style="@style/wrap"
+                android:layout_marginBottom="2dip"
+                android:layout_marginTop="2dip"
+                android:src="@drawable/rd_rss_scan_right_arrow" />
+
+            <Gallery
+                android:id="@+id/gallery"
+                style="@style/fillx"
+                android:layout_width="0dip"
+                android:layout_marginBottom="2dip"
+                android:layout_marginTop="2dip"
+                android:layout_weight="1"
+                android:animationCache="true"
+                android:spacing="22dip" />
+
+            <ImageView
+                android:id="@+id/pre_btn"
+                style="@style/wrap"
+                android:layout_marginBottom="2dip"
+                android:layout_marginTop="2dip"
+                android:gravity="center"
+                android:src="@drawable/rd_rss_scan_left_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchBar"
+            style="@style/fillx"
+            android:background="@drawable/rd_subscribe_title_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/search_txt"
+                style="@style/wrap"
+                android:layout_width="0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/rd_edittext_bg"
+                android:ellipsize="end"
+                android:hint="@string/search_notice"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/search_btn"
+                style="@style/wrap"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/rd_subscribe_search_button_drawable" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        style="@style/fillall"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/rd_subscribed_bg"
+        android:paddingBottom="42dip" >
+
+        <com.qihoo360.reader.ui.channels.ScrollLayout
+            android:id="@+id/scroll"
+            style="@style/fillall"
+            android:layout_marginTop="5dip" />
+
+        <GridView
+            android:id="@+id/search_content"
+            style="@style/fillall"
+            android:layout_gravity="center"
+            android:fadingEdge="none"
+            android:fitsSystemWindows="true"
+            android:gravity="center"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dip"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.qihoo360.reader.ui.ReaderMenuContainer
+        android:id="@+id/menu_layout"
+        style="@style/fillall"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

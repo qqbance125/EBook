@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rd_image_channel_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/rd_image_channel_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="52dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dip"
+        android:background="@color/rd_article_line_2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/rd_image_channel_top_bar_text_container"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/rd_article_common_title_bar_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/rd_image_channel_name"
+                style="@style/wrap"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="10dip"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rd_image_channel_source"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dip"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/rd_image_channel_page"
+                style="@style/wrap"
+                android:layout_marginRight="10dip"
+                android:textColor="@color/rd_article_content"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/rd_title_bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="4dip"
+            android:background="@drawable/rd_title_bottom_cover_list" />
+    </LinearLayout>
+
+    <com.qihoo360.reader.ui.articles.ArticleListView
+        android:id="@+id/rd_image_channel_list"
+        style="@style/fillall"
+        android:layout_below="@id/rd_image_channel_top_bar"
+        android:cacheColorHint="@color/rd_ivory"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:listSelector="#00000000" />
+
+    <LinearLayout
+        android:id="@+id/rd_image_channel_empty"
+        style="@style/fillall"
+        android:layout_below="@id/rd_image_channel_top_bar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/rd_empty_tips"
+            style="@style/wrap"
+            android:layout_margin="5dip"
+            android:contentDescription="@drawable/rd_article_loading_exception"
+            android:src="@drawable/rd_article_loading_exception" />
+
+        <Button
+            android:id="@+id/rd_empty_refresh"
+            style="@style/wrap"
+            android:background="@drawable/rd_article_loading_error_refresh_drawable"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.qihoo360.reader.ui.ReaderMenuContainer
+        android:id="@+id/menu_layout"
+        style="@style/fillall"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/top_subscribe_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dip"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@drawable/rd_article_title_subscribe_bg"
+        android:paddingLeft="20dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="10dip"
+        android:src="@drawable/rd_article_title_subscribe_bg" />
+
+    <ImageView
+        android:id="@+id/top_subscribe_tips"
+        style="@style/wrap"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dip"
+        android:contentDescription="@drawable/rd_artilce_subscribe_once_tips_bg"
+        android:paddingRight="30dip"
+        android:src="@drawable/rd_artilce_subscribe_once_tips_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/rd_tip_bar"
+        style="@style/fillx"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_below="@+id/rd_image_channel_top_bar"
+        android:background="@drawable/rd_article_list_tips_view_bg"
+        android:gravity="center"
+        android:textColor="@color/rd_white"
+        android:visibility="gone" />
+
+</RelativeLayout>
